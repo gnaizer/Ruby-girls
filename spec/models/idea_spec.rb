@@ -6,4 +6,12 @@ RSpec.describe Idea, type: :model do
     second_idea = Idea.create!(name: "My Second Idea Name") # creating another new idea 'instance'
     expect(second_idea.name).to eq("My Second Idea Name") # this is our expectation
   end
+  describe "associations" do
+    it{ is_expected.to have_many(:comments) }
+  end
+  describe "validations" do
+    it{ is_expected.to validate_presence_of :name }
+  end
 end
+
+

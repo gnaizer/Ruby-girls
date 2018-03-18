@@ -27,6 +27,10 @@ gem 'gravtastic'
 
 gem 'passenger'
 
+gem 'activeadmin', github: 'activeadmin'
+
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -57,6 +61,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
 end
 
 group :development do
