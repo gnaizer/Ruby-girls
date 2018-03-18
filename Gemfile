@@ -8,6 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
+# Bundle install 'pry'
+# gem 'pry'
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'
@@ -16,6 +18,15 @@ group :production do
   gem 'pg'
 end
 gem 'carrierwave'
+
+gem 'mini_magick', '4.8.0'
+
+gem 'devise'
+
+gem 'gravtastic'
+
+gem 'passenger'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -40,6 +51,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
